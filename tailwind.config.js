@@ -16,9 +16,11 @@ module.exports = {
     extend: {
       backgroundColor: {
         text: "linear-gradient(135deg, #81FFEF 0%, #F067B4 100%)",
+        card: "rgba(134, 137, 137, 0.6)",
       },
       colors: {
         likeBlack: "#1e1e1e",
+        lightBlack: "#3A3B3B",
       },
       fontWeight: {
         "b-300": "300",

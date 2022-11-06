@@ -9,12 +9,12 @@ const Hero = (props: Props) => {
   return (
     <div className="py-[30px] px-[30px] md:py-[40px] md:px-[154px] h-[522px] w-full relative">
       <Header />
-      <Image
+      <img
         src="/Topographic1.svg"
-        width={1174.16}
-        height={1160.79}
+        // width={1174.16}
+        // height={1160.79}
         alt="topographic picture"
-        className="absolute top-[0px] left-[-50px]"
+        className="absolute top-[0px] left-[-50px] md:w-[300px] lg:w-[1174.16px]"
       />
       <div className="h-[463px] w-full flex items-center relative z-[103]">
         <div className="flex flex-col items-start w-full">
