@@ -18,7 +18,7 @@ const Header = (props: Props) => {
           height={14}
           className="md:hidden"
         />
-        <ul className="items-center hidden md:flex text-[16px] md:h-[19px] md:gap-[32px]">
+        <ul className="items-center fixed md:relative flex flex-col md:flex-row right-0 top-0 h-screen gap-[24px] bg-white md:bg-white text-[16px] md:h-[19px] w-[200px] md:w-auto md:gap-[32px]">
           <li
             className={router.pathname === "/" ? styles.active : "text-white"}
           >
@@ -36,14 +36,14 @@ const Header = (props: Props) => {
               router.pathname === "/services" ? styles.active : "text-white"
             }
           >
-            <Link href="/">Our services</Link>
+            <Link href="/services">Our services</Link>
           </li>
           <li
             className={
               router.pathname === "/contact" ? styles.active : "text-white"
             }
           >
-            <Link href="/">Contact</Link>
+            <Link href="/contact">Contact</Link>
           </li>
         </ul>
       </div>
