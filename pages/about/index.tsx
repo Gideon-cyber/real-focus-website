@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 
 import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 type Props = {};
 
@@ -25,12 +26,19 @@ const About = (props: Props) => {
             className="absolute top-[0px] left-[-50px] md:w-[300px] lg:w-[1174.16px]"
           />
           <div className="h-[463px] w-full flex items-center justify-center relative z-[103]">
-            <h1 className="text-white text-[52px] md:text-[90px] font-b-700">
-              ABOUT US
-            </h1>
+            <div className="flex flex-col items-center">
+              <h1 className="text-white text-[52px] md:text-[90px] font-b-700">
+                ABOUT US
+              </h1>
+              <span className="text-white text-[30px] md:text-[40px] font-b-500">
+                Who we are, what we do.
+              </span>
+            </div>
           </div>
         </div>
       </main>
+
+      <Footer />
     </div>
   );
 };

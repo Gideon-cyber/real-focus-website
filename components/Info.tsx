@@ -10,7 +10,7 @@ const Info = (props: Props) => {
     { header: "10K", text: "Reviews" },
   ];
   return (
-    <div className="bg-white relative z-[102] flex justify-center items-center h-auto py-[100px] md:py-0 md:h-[350px] w-full">
+    <div className="bg-white relative z-[2] flex justify-center items-center h-auto py-[100px] md:py-0 md:h-[350px] w-full">
       <div className="flex flex-col">
         <div className="flex items-center justify-center md:items-start gap-[82px] mb-[30px] flex-wrap mx-auto md:mx-0">
           {infoDetails.map((detail, index) => (

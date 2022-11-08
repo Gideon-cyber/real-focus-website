@@ -16,7 +16,7 @@ const Hero = (props: Props) => {
         alt="topographic picture"
         className="absolute top-[0px] left-[-50px] md:w-[300px] lg:w-[1174.16px]"
       />
-      <div className="h-[463px] w-full flex items-center relative z-[103]">
+      <div className="h-[463px] w-full flex items-center relative">
         <div className="flex flex-col items-start w-full">
           <h1
             className={`${styles.active} text-[30px] text-center md:text-left md:text-[54px] md:leading-[56px] capitalize md:w-[616px] font-b-600 mb-4 mx-auto md:mx-0`}
@@ -35,7 +35,7 @@ const Hero = (props: Props) => {
           // height={427}
           // sizes="320 640 750"
           // layout="responsive"
-          className="absolute md:right-[-130px] md:bottom-[-100px] bottom-[-200px] w-[716px] h-[427px]"
+          className="absolute md:right-[-130px] md:bottom-[-100px] bottom-[-200px] w-[716px] h-[427px] z-[4]"
         />
       </div>
     </div>

@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 
 import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 type Props = {};
 
@@ -31,6 +32,8 @@ const Contact = (props: Props) => {
           </div>
         </div>
       </main>
+
+      <Footer />
     </div>
   );
 };
