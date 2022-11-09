@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import { GetStaticProps } from "next";
 
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
@@ -88,3 +89,9 @@ const About = (props: Props) => {
 };
 
 export default About;
+
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: {}, // will be passed to the page component as props
+  };
+};

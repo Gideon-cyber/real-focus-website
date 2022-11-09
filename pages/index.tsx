@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { GetStaticProps } from "next";
 import Image from "next/image";
 import About from "../components/About";
 import Card from "../components/Card";
@@ -148,8 +149,8 @@ export default function Home() {
   );
 }
 
-export async function getStaticProps() {
+export const getStaticProps: GetStaticProps = async () => {
   return {
     props: {}, // will be passed to the page component as props
   };
-}
+};

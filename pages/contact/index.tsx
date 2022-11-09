@@ -1,5 +1,6 @@
 import React, { FC, useState } from "react";
 import Head from "next/head";
+import { GetStaticProps } from "next";
 import { Field, Form, Formik } from "formik";
 
 import Header from "../../components/Header";
@@ -168,3 +169,9 @@ const Contact = (props: Props) => {
 };
 
 export default Contact;
+
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: {}, // will be passed to the page component as props
+  };
+};
