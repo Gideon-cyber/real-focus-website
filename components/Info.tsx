@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 type Props = {};
@@ -24,12 +25,12 @@ const Info = (props: Props) => {
             </div>
           ))}
         </div>
-        <button
-          type="button"
-          className="rounded-[40px] h-[46px] w-[158px] bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-white font-b-500 mx-auto"
+        <Link
+          href="/contact"
+          className="rounded-[40px] h-[46px] w-[158px] bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-white font-b-500 mx-auto flex justify-center items-center"
         >
           Contact Us
-        </button>
+        </Link>
       </div>
     </div>
   );

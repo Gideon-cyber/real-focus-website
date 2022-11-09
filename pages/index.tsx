@@ -5,6 +5,7 @@ import Card from "../components/Card";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Info from "../components/Info";
+import Testimonials from "../components/Testimonials";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -121,14 +122,7 @@ export default function Home() {
           </div>
         </div>
         {/* What customers say section */}
-        <div className="bg-likeBlack w-full h-[450px] text-white flex items-center justify-center relative overflow-hidden">
-          <img
-            src="/Topographic5.svg"
-            alt="topography"
-            className="absolute top-0 right-0"
-          />
-          <h3 className="uppercase font-b-600">What our customers say</h3>
-        </div>
+        <Testimonials />
 
         {/* Contact section */}
         <div className="flex items-center justify-center text-likeBlack bg-white w-full h-[350px]">
