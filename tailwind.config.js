@@ -38,10 +38,26 @@ module.exports = {
       },
       keyframes: {
         ChangeBg: {
-          "0%": { backgroundColor: "#FFEFBD", backgroundOpacity: "0.5" },
-          "25%": { backgroundColor: "#E1EDFF", backgroundOpacity: "0.5" },
-          "50%": { backgroundColor: "#FFFFFF", backgroundOpacity: "1" },
-          "100%": { backgroundColor: "#FFEFBD", backgroundOpacity: "0.5" },
+          // "0%": { backgroundColor: "#FFEFBD", backgroundOpacity: "0.5" },
+          // "25%": { backgroundColor: "#E1EDFF", backgroundOpacity: "0.5" },
+          // "50%": { backgroundColor: "#FFFFFF", backgroundOpacity: "1" },
+          // "100%": { backgroundColor: "#FFEFBD", backgroundOpacity: "0.5" },
+          "0%": {
+            backgroundImage:
+              "linear-gradient(rgba(4, 4, 4, 0.85), rgba(4, 4, 4, 0.6)), url(/phone4.jpg)",
+          },
+          "35%": {
+            backgroundImage:
+              "linear-gradient(rgba(4, 4, 4, 0.85), rgba(4, 4, 4, 0.6)), url(/phone2.jpg)",
+          },
+          "70%": {
+            backgroundImage:
+              "linear-gradient(rgba(4, 4, 4, 0.85), rgba(4, 4, 4, 0.6)), url(/phone9.jpg)",
+          },
+          "100%": {
+            backgroundImage:
+              "linear-gradient(rgba(4, 4, 4, 0.85), rgba(4, 4, 4, 0.6)), url(/repair1.jpg)",
+          },
         },
       },
     },
