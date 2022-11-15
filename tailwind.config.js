@@ -32,6 +32,18 @@ module.exports = {
         "b-900": "900",
         "bold-max": "1000",
       },
+      animation: {
+        ChangeBg:
+          "ChangeBg 30s ease-in-out infinite alternate-reverse forwards running",
+      },
+      keyframes: {
+        ChangeBg: {
+          "0%": { backgroundColor: "#FFEFBD", backgroundOpacity: "0.5" },
+          "25%": { backgroundColor: "#E1EDFF", backgroundOpacity: "0.5" },
+          "50%": { backgroundColor: "#FFFFFF", backgroundOpacity: "1" },
+          "100%": { backgroundColor: "#FFEFBD", backgroundOpacity: "0.5" },
+        },
+      },
     },
   },
   plugins: [],

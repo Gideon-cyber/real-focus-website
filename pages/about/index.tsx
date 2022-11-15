@@ -1,12 +1,15 @@
 import React from "react";
 import Head from "next/head";
 import { GetStaticProps } from "next";
+import Image from "next/image";
 
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Info from "../../components/Info";
 import Testimonials from "../../components/Testimonials";
 import styles from "../../styles/Home.module.css";
+import Topographic1 from "../../public/Topographic1.svg";
+import Image2 from "../../public/image2.jpg";
 
 type Props = {};
 
@@ -22,8 +25,8 @@ const About = (props: Props) => {
       <main className="font-Poppins bg-likeBlack">
         <div className="py-[30px] px-[30px] md:py-[40px] md:px-[154px] h-[522px] w-full relative">
           <Header />
-          <img
-            src="/Topographic1.svg"
+          <Image
+            src={Topographic1}
             // width={1174.16}
             // height={1160.79}
             alt="topographic picture"
@@ -45,7 +48,7 @@ const About = (props: Props) => {
 
         <div className="bg-white relative z-[5] w-full flex items-center justify-center px-[2rem] py-[3rem] md:py-[8rem] md:px-[8rem]">
           <div className="flex items-center w-full gap-[3rem] flex-col md:flex-row">
-            <img src="/image2.jpg" alt="picture" className="w-[450px]" />
+            <Image src={Image2} alt="picture" className="w-[450px]" />
             <div className="flex items-start flex-col">
               <h2
                 className={`text-[40px] leading-[55px] md:text-[65px] md:leading-[75px] font-b-700 mb-[2rem] ${styles.active}`}

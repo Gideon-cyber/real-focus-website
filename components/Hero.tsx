@@ -2,6 +2,8 @@ import React from "react";
 import Header from "./Header";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import Topographic1 from "../public/Topographic1.svg";
+import Laptop from "../public/Laptop.svg";
 
 type Props = {};
 
@@ -9,8 +11,8 @@ const Hero = (props: Props) => {
   return (
     <div className="py-[30px] px-[30px] md:py-[40px] md:px-[154px] h-[522px] w-full relative">
       <Header />
-      <img
-        src="/Topographic1.svg"
+      <Image
+        src={Topographic1}
         // width={1174.16}
         // height={1160.79}
         alt="topographic picture"
@@ -28,14 +30,14 @@ const Hero = (props: Props) => {
             <br /> brands in one place for you
           </span>
         </div>
-        <img
-          src="/Laptop.svg"
+        <Image
+          src={Laptop}
           alt="laptop pic"
           // width={716}
           // height={427}
           // sizes="320 640 750"
           // layout="responsive"
-          className="absolute md:right-[-130px] md:bottom-[-100px] bottom-[-200px] w-[716px] h-[427px] z-[4]"
+          className="absolute md:right-[-130px] md:bottom-[-100px] bottom-[-100px] w-[300px] left-[1/2] md:w-[716px] md:h-[427px] z-[4]"
         />
       </div>
     </div>

@@ -8,6 +8,12 @@ import Hero from "../components/Hero";
 import Info from "../components/Info";
 import Testimonials from "../components/Testimonials";
 import styles from "../styles/Home.module.css";
+import Girl from "../public/girl.svg";
+import Topographic2 from "../public/Topographic2.svg";
+import Topographic3 from "../public/Topographic3.svg";
+import Topographic4 from "../public/Topographic4.svg";
+import Beat1 from "../public/beats1.svg";
+import Beat2 from "../public/beats2.svg";
 
 export default function Home() {
   return (
@@ -24,10 +30,13 @@ export default function Home() {
         <About />
         <div className="bg-likeBlack flex items-center justify-center w-full relative md:h-[450px] py-[36px]">
           <div className="flex items-center flex-col md:flex-row gap-[60px] relative z-10">
-            <img
-              src="/girl.svg"
-              alt="laptop"
+            <Image
+              src={Girl}
+              alt="girl"
+              // width={300}
+              // height={450}
               className="w-[300px] mt-11 flex items-baseline"
+              priority
             />
             <div className="w-[300px] md:w-[600px] md:relative flex flex-col">
               <h2
@@ -47,15 +56,15 @@ export default function Home() {
               </button> */}
               <div className="hidden md:block md:absolute">
                 <div className="flex items-center gap-[20px] overflow-scroll md:overflow-hidden md:mt-[15rem] w-full">
-                  <Card />
-                  <Card />
-                  <Card />
+                  <Card src={Beat1} />
+                  <Card src={Beat2} />
+                  <Card src={Beat1} />
                 </div>
               </div>
             </div>
           </div>
-          <img
-            src="/Topographic2.svg"
+          <Image
+            src={Topographic2}
             alt="topographic2"
             className="absolute right-0 top-0"
           />
@@ -64,13 +73,13 @@ export default function Home() {
         {/* Values section */}
         <div className="bg-white flex items-center justify-center w-full h-auto relative z-3 py-[37px] md:pt-[200px] md:pb-[100px] text-white">
           <div className="bg-likeBlack flex items-center justify-center flex-col p-[30px] md:p-[100px] w-[90%] md:w-[80%] rounded-[24px] relative overflow-hidden">
-            <img
-              src="/Topographic3.svg"
+            <Image
+              src={Topographic3}
               alt="topographic"
               className="absolute bottom-0 left-0"
             />
-            <img
-              src="/Topographic4.svg"
+            <Image
+              src={Topographic4}
               alt="topographic"
               className="absolute top-0 right-0"
             />
@@ -84,7 +93,7 @@ export default function Home() {
               <span className="text-[13px] leading-[18px]">
                 We care about our work. We care about doing a good job. We care
                 about customers. We care about the environment and society. We
-                are not ‘just doing our joib’ we care about product you recieve
+                are not ‘just doing our job’ we care about product you receive
                 and experience you will have.
               </span>
             </div>
@@ -94,7 +103,7 @@ export default function Home() {
                 We Provide the best quality
               </h4>
               <span className="text-[13px] leading-[18px]">
-                Here you will find products of the best brands in gadgets worls.
+                Here you will find products of the best brands in gadgets world.
                 Moreover if you are not satisfied with quality of product we are
                 always here to help you.
               </span>
@@ -105,7 +114,7 @@ export default function Home() {
                 We promote the comfort
               </h4>
               <span className="text-[13px] leading-[18px]">
-                We deliver all products to provide the most comfortable servise.
+                We deliver all products to provide the most comfortable service.
                 You can order a delivery to home, office, garage, garden,
                 island...Wherever you need.
               </span>
@@ -115,9 +124,9 @@ export default function Home() {
               <h4 className="uppercase font-b-500 mb-3">We learn</h4>
               <span className="text-[13px] leading-[18px]">
                 We always grow and learn new. We have a special blog about news
-                from thech world. Subscribe to recieve news and articles which
-                our specialists recommend to read to keep up with fast growing
-                world of tech.
+                from the tech world. Subscribe to receive news and articles
+                which our specialists recommend to read to keep up with fast
+                growing world of tech.
               </span>
             </div>
           </div>
@@ -138,7 +147,7 @@ export default function Home() {
             </div>
             <div className="flex items-center gap-2">
               <Image src="/mail.svg" alt="phone" width={18} height={18} />
-              <span className="">google.gmail.com</span>
+              <span className="">Realfocustech@gmail.com</span>
             </div>
           </div>
         </div>
