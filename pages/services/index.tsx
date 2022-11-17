@@ -145,7 +145,7 @@ const Services = (props: Props) => {
             <h2 className="text-left mb-6 text-[30px] font-b-600">
               Wristwatch Collection
             </h2>
-            <div className="grid grid-cols-4 gap-4 ">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 ">
               {watches.map((item, index) => (
                 <div key={index}>
                   <Image src={item} alt="picture" />
@@ -161,7 +161,7 @@ const Services = (props: Props) => {
             <h2 className="text-left mb-6 text-[30px] font-b-600">
               Phone Collection
             </h2>
-            <div className="grid grid-cols-4 gap-4 ">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 ">
               {phones.map((item, index) => (
                 <div key={index}>
                   <Image src={item} alt="picture" />
@@ -177,7 +177,7 @@ const Services = (props: Props) => {
             <h2 className="text-left mb-6 text-[30px] font-b-600">
               Phone Repairs
             </h2>
-            <div className="grid grid-cols-4 gap-4 ">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 ">
               {Repairs.map((item, index) => (
                 <div key={index}>
                   <Image src={item} alt="picture" />

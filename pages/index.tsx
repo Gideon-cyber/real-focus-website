@@ -8,7 +8,7 @@ import Hero from "../components/Hero";
 import Info from "../components/Info";
 import Testimonials from "../components/Testimonials";
 import styles from "../styles/Home.module.css";
-import Girl from "../public/girl.svg";
+import Girl from "../public/girl2.png";
 import Topographic2 from "../public/Topographic2.svg";
 import Topographic3 from "../public/Topographic3.svg";
 import Topographic4 from "../public/Topographic4.svg";
@@ -143,11 +143,15 @@ export default function Home() {
             <span className="text-[16px] leading-[20px] mb-3">Contact us</span>
             <div className="flex items-center gap-2">
               <Image src="/phone.svg" alt="phone" width={18} height={18} />
-              <span className="">+2341112223344</span>
+              <a href="tel:+234 805 482 0311">
+                <span className="">+234 805 482 0311</span>
+              </a>
             </div>
             <div className="flex items-center gap-2">
               <Image src="/mail.svg" alt="phone" width={18} height={18} />
-              <span className="">Realfocustech@gmail.com</span>
+              <a href="mailto:Realfocustech@gmail.com">
+                <span className="">Realfocustech@gmail.com</span>
+              </a>
             </div>
           </div>
         </div>

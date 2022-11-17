@@ -46,11 +46,23 @@ module.exports = {
             backgroundImage:
               "linear-gradient(rgba(4, 4, 4, 0.85), rgba(4, 4, 4, 0.6)), url(/phone4.jpg)",
           },
-          "35%": {
+          "15%": {
             backgroundImage:
               "linear-gradient(rgba(4, 4, 4, 0.85), rgba(4, 4, 4, 0.6)), url(/phone2.jpg)",
           },
-          "70%": {
+          "30%": {
+            backgroundImage:
+              "linear-gradient(rgba(4, 4, 4, 0.85), rgba(4, 4, 4, 0.6)), url(/watch2.jpg)",
+          },
+          "45%": {
+            backgroundImage:
+              "linear-gradient(rgba(4, 4, 4, 0.85), rgba(4, 4, 4, 0.6)), url(/repair2.jpg)",
+          },
+          "60%": {
+            backgroundImage:
+              "linear-gradient(rgba(4, 4, 4, 0.85), rgba(4, 4, 4, 0.6)), url(/watch6.jpg)",
+          },
+          "75%": {
             backgroundImage:
               "linear-gradient(rgba(4, 4, 4, 0.85), rgba(4, 4, 4, 0.6)), url(/phone9.jpg)",
           },

@@ -5,10 +5,10 @@ type Props = {};
 
 const Info = (props: Props) => {
   const infoDetails = [
-    { header: "10", text: "Years of experience" },
-    { header: "5K", text: "Products" },
-    { header: "59", text: "Countries of delivery" },
-    { header: "10K", text: "Reviews" },
+    { header: "17+", text: "Years of experience" },
+    { header: "25K+", text: "Products" },
+    { header: "36", text: "States of delivery + FCT" },
+    { header: "2K+", text: "Reviews" },
   ];
   return (
     <div className="bg-white relative z-[2] flex justify-center items-center h-auto py-[100px] md:py-0 md:h-[350px] w-full">

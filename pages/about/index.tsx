@@ -10,6 +10,7 @@ import Testimonials from "../../components/Testimonials";
 import styles from "../../styles/Home.module.css";
 import Topographic1 from "../../public/Topographic1.svg";
 import Image2 from "../../public/image2.jpg";
+import Styles from "../../styles/Home.module.css";
 
 type Props = {};
 
@@ -80,6 +81,21 @@ const About = (props: Props) => {
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="bg-white relative z-[5] w-full flex items-center justify-center flex-col gap-[1rem] px-[2rem] py-[3rem] md:pb-[8rem] md:px-[8rem]">
+          <div
+            className="w-[200px] h-[200px] md:h-[400px] md:w-[400px] rounded-full border "
+            style={{
+              backgroundImage: `url(/ceo.jpg)`,
+              backgroundSize: "cover",
+            }}
+          ></div>
+          <span
+            className={`text-[24px] leading-[34px] md:text-[40px] md:leading-[45px] font-b-600 text-center ${styles.active} shadow-sm`}
+          >
+            Chief Executive Officer(CEO)
+          </span>
         </div>
 
         <Testimonials />

@@ -20,12 +20,6 @@ const Card = ({ src }: Props) => {
           <h3 className="text-[12px] leading-[18px]">
             Beats Solo3 Wireless Headphones
           </h3>
-          <div className="flex items-center gap-2">
-            <span className="text-red-600 line-through text-[10px] leading-[16px]">
-              $200
-            </span>
-            <span className="text-[10px] leading-[16px]">$100</span>
-          </div>
         </div>
       </div>
     </div>
