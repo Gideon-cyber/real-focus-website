@@ -49,7 +49,7 @@ const Testimonials = (props: Props) => {
     if (count === details.length) {
       return (count = 0);
     } else if (count < 0) {
-      return (count = details.length);
+      return (count = details.length - 1);
     }
     return count;
   }
@@ -88,16 +88,16 @@ const Testimonials = (props: Props) => {
           </div>
 
           <span className="text-[12px]">{details[index].review}</span>
-          {/* <Image
+          <Image
             src={LeftArrow}
             alt="left-arrow"
-            className="absolute left-[20px] top-[45%]"
+            className="absolute left-[20px] top-[45%] cursor-pointer"
             onClick={() => setIndex((count) => loop(count - 1))}
-          /> */}
+          />
           <Image
             src={RightArrow}
             alt="left-arrow"
-            className="absolute right-[20px] top-[45%]"
+            className="absolute right-[20px] top-[45%] cursor-pointer"
             onClick={() => setIndex((count) => loop(count + 1))}
           />
         </div>
