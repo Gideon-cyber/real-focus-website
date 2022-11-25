@@ -143,14 +143,14 @@ export default function Home() {
             <span className="text-[16px] leading-[20px] mb-3">Contact us</span>
             <div className="flex items-center gap-2">
               <Image src="/phone.svg" alt="phone" width={18} height={18} />
-              <a href="tel:+234 805 482 0311">
+              <a href="tel:+234 706 663 5075">
                 <span className="">+234 706 663 5075</span>
               </a>
             </div>
             <div className="flex items-center gap-2">
               <Image src="/mail.svg" alt="phone" width={18} height={18} />
-              <a href="mailto:Realfocustech@gmail.com">
-                <span className="">Realfocustech@gmail.com</span>
+              <a href="mailto:info@realfocus.com.ng">
+                <span className="">info@realfocus.com.ng</span>
               </a>
             </div>
           </div>

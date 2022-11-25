@@ -64,7 +64,7 @@ const Services = (props: Props) => {
   const ourService = [
     " We are renowned for wholesale and retail sale of mobile phones and accessories",
     "We sell smart wristwatches chromatography watches that can stand the test of time to Nigerians",
-    "edit phone repair gadgets to phone internal components",
+    "we repair mobile phone internal components",
     "We sell tech Gadgets that stands out from the rest",
   ];
 
