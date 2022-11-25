@@ -61,6 +61,12 @@ const Services = (props: Props) => {
   ];
 
   const Repairs = [repair1, repair2, repair3];
+  const ourService = [
+    " We are renowned for wholesale and retail sale of mobile phones and accessories",
+    "We sell smart wristwatches chromatography watches that can stand the test of time to Nigerians",
+    "edit phone repair gadgets to phone internal components",
+    "We sell tech Gadgets that stands out from the rest",
+  ];
 
   return (
     <div>
@@ -103,35 +109,17 @@ const Services = (props: Props) => {
                 <div className="h-[300px] sm:h-[200px] border-[2px] border-likeBlack"></div>
                 <div className="">
                   <div className="flex items-start flex-col gap-[1rem]">
-                    <div className="flex items-start justify-start">
-                      <div className="w-2 h-2 rounded-full bg-likeBlack inline mr-2 mt-2"></div>
-                      <span className="text-[18px] leading-[24px]">
-                        We are renowned for wholesale and retail sale of mobile
-                        phones and accessories
-                      </span>
-                    </div>
-
-                    <div className="flex items-start justify-start">
-                      <div className="w-2 h-2 rounded-full bg-likeBlack inline mr-2 mt-2"></div>
-                      <span className="text-[18px] leading-[24px]">
-                        We sell smart wristwatches chromatography watches that
-                        can stand the test of time to Nigerians
-                      </span>
-                    </div>
-
-                    <div className="flex items-start justify-start">
-                      <div className="w-2 h-2 rounded-full bg-likeBlack inline mr-2 mt-2"></div>
-                      <span className="text-[18px] leading-[24px]">
-                        We repair mobile phones and gadets
-                      </span>
-                    </div>
-
-                    <div className="flex items-start justify-start">
-                      <div className="w-2 h-2 rounded-full bg-likeBlack inline mr-2 mt-2"></div>
-                      <span className="text-[18px] leading-[24px]">
-                        We sell tech Gadgets that stands out from the rest
-                      </span>
-                    </div>
+                    {ourService.map((service, index) => (
+                      <div
+                        key={index}
+                        className="flex items-start justify-start"
+                      >
+                        <div className="w-2 h-2 rounded-full bg-likeBlack inline mr-2 mt-2"></div>
+                        <span className="text-[18px] leading-[24px]">
+                          {service}
+                        </span>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>

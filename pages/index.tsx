@@ -42,7 +42,7 @@ export default function Home() {
               <h2
                 className={`${styles.active} text-[32px] md:text-[45px] leading-[40px] md:leading-[55px] font-b-500 uppercase w-[100%] md:w-[400px] mb-3`}
               >
-                Move with the beat of yor life
+                Move with the beat of your life
               </h2>
               <span className="font-b-400 text-[20px] text-white leading-[30px] w-[100%] md:w-[400px] block mb-3">
                 Enjoy the biggest collection of the best gadgets on sales that
@@ -138,13 +138,13 @@ export default function Home() {
         <div className="flex items-center justify-center text-likeBlack bg-white w-full h-[350px]">
           <div className="flex items-center gap-2 flex-col">
             <h3 className="uppercase font-b-700 text-[24px] leading-[30px] mb-2">
-              You have questions?
+              Need our service?
             </h3>
             <span className="text-[16px] leading-[20px] mb-3">Contact us</span>
             <div className="flex items-center gap-2">
               <Image src="/phone.svg" alt="phone" width={18} height={18} />
               <a href="tel:+234 805 482 0311">
-                <span className="">+234 805 482 0311</span>
+                <span className="">+234 706 663 5075</span>
               </a>
             </div>
             <div className="flex items-center gap-2">

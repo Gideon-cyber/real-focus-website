@@ -17,6 +17,12 @@ interface ErrorText {
   fontSize?: string;
 }
 
+interface data {
+  name: string;
+  email: string;
+  message: string;
+}
+
 export const ErrorText: FC<ErrorText> = ({
   text,
   fontSize = "text-[9px] leading-[9.5px]",
@@ -41,26 +47,34 @@ export const Label: FC<LabelProps> = ({ label }) => {
 };
 
 const Contact = (props: Props) => {
-  const [data, setData] = useState({
+  const [data, setData] = useState<data>({
     name: "",
     email: "",
     message: "",
   });
 
-  const handleSubmit = (values: any, onSubmitProps: any) => {
+  const handleSubmit = (values: data, onSubmitProps: any) => {
     console.log(values);
+
+    window.location.href = `mailto:info@realfocus.com.ng?subject=Contact&body=Hi, my name is ${values.name} ${values.message} ${values.email}`;
     onSubmitProps.resetForm(values);
 
-    const config = {
-      Username: "gideonjohnson70@gmail.com",
-      Password: "DA17E4A708D83E14391A05C2EDA96F0B9296",
-      Host: "smtp.elasticemail.com ",
-      Port: 2525,
-      To: "gideonjohnson70@gmail",
-      From: values.email,
-      Subject: `${values.name} is Contacting you`,
-      Body: values?.message,
-    };
+    setData({
+      name: "",
+      email: "",
+      message: "",
+    });
+
+    // const config = {
+    //   Username: "gideonjohnson70@gmail.com",
+    //   Password: "DA17E4A708D83E14391A05C2EDA96F0B9296",
+    //   Host: "smtp.elasticemail.com ",
+    //   Port: 2525,
+    //   To: "gideonjohnson70@gmail",
+    //   From: values.email,
+    //   Subject: `${values.name} is Contacting you`,
+    //   Body: values?.message,
+    // };
 
     // if (window?.Email) {
     //   window?.Email.send(config).then((message) => alert(message));

@@ -7,7 +7,7 @@ const Info = (props: Props) => {
   const infoDetails = [
     { header: "17+", text: "Years of experience" },
     { header: "25K+", text: "Products" },
-    { header: "36", text: "States of delivery + FCT" },
+    { header: "36", text: "States covered + FCT" },
     { header: "2K+", text: "Reviews" },
   ];
   return (
